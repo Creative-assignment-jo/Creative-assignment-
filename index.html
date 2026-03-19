@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Assignment | كرييتيف أسايمنت</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#020617',
+                            950: '#000000',
+                        },
+                        gold: {
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            light: '#d4af37'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+        .glass-effect {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #facc15, #d4af37, #fef08a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
+        }
+    </style>
+</head>
+<body class="bg-navy-900 text-slate-200">
+
+    <div class="bg-slate-800 text-slate-400 text-xs py-2 px-4 flex items-center justify-center border-b border-slate-700 hidden sm:flex">
+        <div class="flex items-center bg-slate-900 rounded-full px-4 py-1 border border-slate-600">
+            <i class="fa-solid fa-lock text-emerald-500 ml-2"></i>
+            <span class="tracking-wider">www.creative-jo.dev</span>
+        </div>
+    </div>
+
+    <nav class="fixed w-full z-50 glass-effect transition-all duration-300 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex items-center gap-3">
+                        <img src="1000097224.jpg" alt="Logo" class="h-12 w-auto object-contain rounded-md" onerror="this.src='https://placehold.co/150x150/0f172a/d4af37?text=CA'">
+                        <div class="flex flex-col leading-none">
+                            <span class="text-2xl md:text-3xl font-bold gradient-text">Creative</span>
+                            <span class="text-xs md:text-sm tracking-widest text-slate-300">Assignment</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 space-x-reverse items-center">
+                    <a href="#home" class="text-slate-200 hover:text-gold-400 font-semibold transition">الرئيسية</a>
+                    <a href="#about" class="text-slate-200 hover:text-gold-400 font-semibold transition">من نحن</a>
+                    <a href="#services" class="text-slate-200 hover:text-gold-400 font-semibold transition">خدماتنا</a>
+                    <a href="#features" class="text-slate-200 hover:text-gold-400 font-semibold transition">المميزات</a>
+                    <a href="https://wa.me/962775365917" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-400 text-navy-950 px-6 py-2 rounded-lg font-bold hover:shadow-[0_0_15px_rgba(234,179,8,0.5)] transition transform hover:-translate-y-0.5">
+                        احجز مشروعك
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-200 hover:text-gold-400 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="block px-3 py-2 text-slate-200 font-semibold">الرئيسية</a>
+                <a href="#about" class="block px-3 py-2 text-slate-200 font-semibold">من نحن</a>
+                <a href="#services" class="block px-3 py-2 text-slate-200 font-semibold">خدماتنا</a>
+                <a href="https://wa.me/962775365917" target="_blank" class="block px-3 py-2 text-gold-400 font-bold">تواصل معنا الآن</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-bg">
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-gold-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-blob"></div>
+        <div class="absolute top-1/3 right-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-[128px] opacity-20 animate-blob animation-delay-2000"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 font-semibold text-sm">
+                <i class="fa-solid fa-check-circle ml-1"></i> دقة، أصالة، وتميز أكاديمي
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                لأنك تستحق التميز..<br>
+                <span class="gradient-text">نحن هنا لنضمنه لك</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+                نكتبها بإبداع.. لتسلّمها بثقة وامتياز. خدمات أكاديمية احترافية خالية من الذكاء الاصطناعي بنسبة 100%.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/962775365917" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-gold-600 to-gold-400 text-navy-950 rounded-xl font-bold text-lg hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    تواصل معنا على الواتساب
+                </a>
+                <a href="https://instagram.com/4creative.jo" target="_blank" class="w-full sm:w-auto px-8 py-4 bg-slate-800 border border-slate-600 text-white rounded-xl font-bold text-lg hover:bg-slate-700 transition transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-instagram text-2xl text-pink-500"></i>
+                    تابعنا على إنستغرام
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-10 border-y border-slate-800 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold gradient-text mb-2">2019</div>
+                    <div class="text-slate-400 font-semibold text-lg">عام التأسيس والبداية</div>
+                </div>
+                <div class="p-4 border-t md:border-t-0 md:border-r border-slate-800">
+                    <div class="text-4xl md:text-5xl font-bold gradient-text mb-2">+5000</div>
+                    <div class="text-slate-400 font-semibold text-lg">أسايمنت وبحث منجز</div>
+                </div>
+                <div class="p-4 border-t md:border-t-0 md:border-r border-slate-800">
+                    <div class="text-4xl md:text-5xl font-bold gradient-text mb-2">+3000</div>
+                    <div class="text-slate-400 font-semibold text-lg">طالب وطالبة يثقون بنا</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gold-500 rounded-2xl transform translate-x-4 translate-y-4 opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Graduation and Study" class="rounded-2xl relative z-10 border border-slate-700 shadow-2xl">
+                        <div class="absolute -bottom-6 -left-6 bg-slate-900 border-2 border-gold-500 rounded-full p-4 w-32 h-32 flex flex-col items-center justify-center z-20 shadow-[0_0_20px_rgba(234,179,8,0.3)]">
+                            <span class="text-3xl font-bold text-white">0%</span>
+                            <span class="text-gold-400 font-bold text-sm">ذكاء اصطناعي</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">من <span class="text-gold-400">نحن؟</span></h2>
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                        مجموعة من المعلمين خريجي درجة الماجستير، على أتم استعداد لمساعدة طلاب الجامعات داخل الأردن في تقديم أفضل الأبحاث والواجبات الجامعية.
+                    </p>
+                    <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                        نحن متخصصون بشكل دقيق في التخصصات الإدارية، الفندقية، فنون الطهي، وإدارة الطعام والشراب، ونضمن لك عملاً أكاديمياً متقناً يرفع من تحصيلك العلمي.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-gold-500 text-xl"></i>
+                            <span class="text-slate-200 font-semibold">حلول بشرية 100% موثوقة.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-gold-500 text-xl"></i>
+                            <span class="text-slate-200 font-semibold">خبرة أكاديمية عالية.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-check text-gold-500 text-xl"></i>
+                            <span class="text-slate-200 font-semibold">سرية تامة لبيانات ومعلومات الطالب.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">خدماتنا <span class="text-gold-400">الأكاديمية</span></h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">مكان واحد لاستكشاف أعمالنا وخدماتنا التي تلبي كافة احتياجاتك الجامعية والمهنية.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-effect p-8 rounded-2xl hover:border-gold-500/50 transition duration-300 group">
+                    <div class="w-16 h-16 bg-slate-800 border border-slate-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition">
+                        <i class="fa-solid fa-book-open text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">أبحاث علمية دقيقة</h3>
+                    <p class="text-slate-400 leading-relaxed">إعداد أبحاث أكاديمية متوافقة مع معايير الجامعات، مع توثيق المراجع (APA, Harvard) بدقة تامة.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover:border-gold-500/50 transition duration-300 group">
+                    <div class="w-16 h-16 bg-slate-800 border border-slate-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition">
+                        <i class="fa-solid fa-pen-to-square text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">حل الأسايمنتات</h3>
+                    <p class="text-slate-400 leading-relaxed">حل منهجي واحترافي لكافة الواجبات الجامعية يضمن لك الحصول على علامة A+.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover:border-gold-500/50 transition duration-300 group">
+                    <div class="w-16 h-16 bg-slate-800 border border-slate-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">مشاريع تخرج ورسائل</h3>
+                    <p class="text-slate-400 leading-relaxed">دعم بحثي متكامل لمشاريع التخرج ورسائل الماجستير خطوة بخطوة حتى المناقشة.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl hover:border-gold-500/50 transition duration-300 group">
+                    <div class="w-16 h-16 bg-slate-800 border border-slate-600 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition">
+                        <i class="fa-solid fa-file-lines text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">ملخصات شاملة</h3>
+                    <p class="text-slate-400 leading-relaxed">تلخيص المواد الجامعية الطويلة بأسلوب يسهل الحفظ والفهم للاستعداد للامتحانات.</p>
+                </div>
+
+                <div class="glass-effect p-8 rounded-2xl border border-gold-500/30 hover:shadow-[0_0_20px_rgba(234,179,8,0.2)] transition duration-300 group relative overflow-hidden lg:col-span-2">
+                    <div class="absolute top-0 right-0 bg-gold-500 text-navy-900 font-bold px-4 py-1 rounded-bl-xl text-sm z-10">الأكثر طلباً</div>
+                    <div class="flex flex-col md:flex-row gap-6 items-center">
+                        <div class="w-20 h-20 bg-slate-800 border border-gold-500/50 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-briefcase text-4xl text-gold-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-3">تصميم CV احترافي (ATS Friendly)</h3>
+                            <p class="text-slate-400 leading-relaxed mb-4">لا تترك سيرتك الذاتية للصدفة! نصمم لك بروفايل احترافي يتخطى أنظمة الفرز الآلي للشركات (ATS)، بتصميم عصري يبرز إنجازاتك الحقيقية. جاهز خلال 24 ساعة فقط.</p>
+                            <div class="flex gap-4 flex-wrap">
+                                <span class="bg-slate-800 px-3 py-1 rounded-full text-xs text-gold-400 border border-slate-700"><i class="fa-solid fa-search mr-1"></i> تخطي ATS</span>
+                                <span class="bg-slate-800 px-3 py-1 rounded-full text-xs text-gold-400 border border-slate-700"><i class="fa-solid fa-clock mr-1"></i> 24 ساعة</span>
+                                <span class="bg-slate-800 px-3 py-1 rounded-full text-xs text-gold-400 border border-slate-700"><i class="fa-solid fa-palette mr-1"></i> تصميم عصري</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-16">لماذا تختار <span class="text-gold-400">Creative Assignment</span>؟</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="w-20 h-20 mx-auto bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+                        <i class="fa-solid fa-brain text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">0% ذكاء اصطناعي</h3>
+                    <p class="text-slate-400 text-sm">نصوص بشرية حقيقية 100%، خالية من مخاطر كشف الـ AI.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 mx-auto bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+                        <i class="fa-solid fa-clock-rotate-left text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">التزام تام بالوقت</h3>
+                    <p class="text-slate-400 text-sm">نسلمك أعمالك في الوقت المحدد بدقة، دون أي تأخير.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 mx-auto bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+                        <i class="fa-solid fa-shield-halved text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">جودة مضمونة A+</h3>
+                    <p class="text-slate-400 text-sm">محتوى حصري وأكاديمي دقيق يضمن لك أعلى العلامات.</p>
+                </div>
+                <div>
+                    <div class="w-20 h-20 mx-auto bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+                        <i class="fa-solid fa-arrows-rotate text-3xl text-gold-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">تعديل حتى الرضا</h3>
+                    <p class="text-slate-400 text-sm">لأن رضاك مسؤوليتنا، نعدل متطلباتك مجاناً حتى تنال إعجابك التام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-950 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12 border-b border-slate-800 pb-12">
+                
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="1000097224.jpg" alt="Logo" class="h-10 w-auto object-contain rounded-md" onerror="this.src='https://placehold.co/150x150/0f172a/d4af37?text=CA'">
+                        <div class="flex flex-col leading-none">
+                            <span class="text-2xl font-bold gradient-text">Creative</span>
+                            <span class="text-xs tracking-widest text-slate-300">Assignment</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        نكتبها بإبداع.. لتسلّمها بثقة وامتياز. وجهتك الأولى في الأردن للخدمات الأكاديمية الاحترافية وتصميم السير الذاتية المعتمدة.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://instagram.com/4creative.jo" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-300
